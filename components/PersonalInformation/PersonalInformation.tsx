@@ -4,7 +4,7 @@ export const PersonalInformation = () => {
   return (
     <View>
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-        <Image style={styles.avatar} source={require('../../assets/SofyanAmrabat.jpg')} />
+        <Image style={styles.avatar} source={require('../../assets/avatar.jpg')} />
         <View style={{ margin: 10, backgroundColor: 'lightgray', padding: 10, borderRadius: 10, width: '70%' }}>
           <Text style={{ textAlign: 'center', fontWeight: '700', fontSize: 20 }}>
             Descripción sobre mí!
