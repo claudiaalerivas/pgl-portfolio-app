@@ -5,7 +5,7 @@ import Hobbies from '../Hobbies/Hobbies';
 export const HobbiesContainer = () => {
   return (
     <View>
-      <Text style={{ color: 'black', fontWeight: "900", textTransform: 'capitalize', fontSize: 20, textAlign: 'center' }}>
+      <Text style={styles.title}>
         cosas que me gustan mucho:
       </Text>
       <View style={styles.container}>
@@ -18,5 +18,12 @@ const styles = StyleSheet.create({
   container: {
     marginBottom: '50%',
     marginTop: '3%'
+  }, 
+  title: {
+    color: 'black', 
+    fontWeight: "900", 
+    textTransform: 'capitalize', 
+    fontSize: 20, 
+    textAlign: 'center'
   }
 });
