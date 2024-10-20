@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import { info } from '../../data/info';
+import Entypo from '@expo/vector-icons/Entypo';
 
 
 const Hobbies = () => {
@@ -8,7 +9,10 @@ const Hobbies = () => {
       <FlatList
         data={info}
         renderItem={({ item }) =>
-          <Text style={styles.itemList}>{item.description}</Text>
+          <Text style={styles.itemList}>
+            <Entypo style={styles.icons} name= {item.icon} size={24} color="#00aeef" />
+            {item.description}
+            </Text>
         }
       />
     </View>
@@ -17,19 +21,16 @@ const Hobbies = () => {
 
 
 const styles = StyleSheet.create({
+  icons:{
+    margin:10
+  },
   itemList: {
-    borderColor: 'black',
-    borderWidth: 1,
-    borderStyle: 'dashed',
     padding: 20,
-    paddingLeft: '25%',
+    paddingLeft: '10%',
     paddingRight: '25%',
-    color: 'darkred',
-    textAlign: 'center',
+    color: '#3b3b3c',
     fontWeight: 'bold',
-    fontStyle: 'italic',
     fontSize: 16,
-    backgroundColor: 'silver',
   }
 });
-export default Hobbies;
+export default Hobbies
