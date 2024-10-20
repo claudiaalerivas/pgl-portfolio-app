@@ -1,14 +1,24 @@
 export const info = [
-    {description:'Salir a pasear'},
-    {description:'Senderismo'},
-    {description:'Ir a la playita'},
-    {description:'Domingos de misa'},
-    {description:'La guitarrita'},
-    {description:'El monte con lluvia'},
-    {description:'Viajar'},
-    {description:'Música variadita'},
-    {description:'Anime'},
-    {description:'Ducharme'},
-    {description:'Videojuegos'},
-    {description:'Ir de cenar romántica'}
+    {
+        icon: 'air' ,
+        description:'    Dormir'},
+    {
+        icon: 'users' ,
+        description:'    Family time'},
+    {
+        icon: 'graduation-cap' ,
+        description:'    Programar JS - React'},
+        
+    {
+        icon: 'trophy' ,
+        description:'    Fortnite'},
+    {
+        icon: 'open-book' ,
+        description:'    Leer libros'},
+    {
+        icon: 'beamed-note' ,
+        description:'    Escuchar Rock'},
+    {
+        icon: 'add-user' ,
+        description:'    Que mi pareja me enseñe a programar :D'}
 ]
