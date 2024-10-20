@@ -17,7 +17,7 @@ const Header = ({ setDisplayMyQR }: App) => {
       </View>
     </View>
   )
-}
+};
 
 const styles = StyleSheet.create({
   textButtomQr: {
@@ -62,5 +62,5 @@ const styles = StyleSheet.create({
     paddingLeft: 50
   },
 
-})
+});
 export default Header

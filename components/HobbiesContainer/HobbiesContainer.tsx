@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native';
 import Hobbies from '../Hobbies/Hobbies';
 
-export const HobbiesContainer = () => {
+const HobbiesContainer = () => {
   return (
     <View>
       <Text style={styles.title}>
@@ -13,7 +13,7 @@ export const HobbiesContainer = () => {
       </View>
     </View >
   )
-}
+};
 const styles = StyleSheet.create({
   container: {
     marginBottom: '50%',
@@ -27,3 +27,4 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   }
 });
+export default HobbiesContainer;

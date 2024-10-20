@@ -1,6 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native';
-export const PersonalInformation = () => {
+
+const PersonalInformation = () => {
   return (
     <View>
       <View style={styles.principalContainerInfo}>
@@ -39,4 +40,6 @@ const styles = StyleSheet.create({
     borderRadius: 10, 
     width: '70%'
   }
-})
+});
+
+export default PersonalInformation;

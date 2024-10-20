@@ -15,7 +15,6 @@ const Hobbies = () => {
   )
 }
 
-export default Hobbies
 
 const styles = StyleSheet.create({
   itemList: {
@@ -33,3 +32,4 @@ const styles = StyleSheet.create({
     backgroundColor: 'silver',
   }
 });
+export default Hobbies;

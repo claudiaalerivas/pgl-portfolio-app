@@ -1,7 +1,8 @@
 import React from 'react'
 import { StyleSheet, View } from 'react-native';
 import QRCode from 'react-native-qrcode-svg';
-function QrCode() {
+
+const QrCode = () => {
   return (
     <View style={styles.bodyStyles}>
       <View style={styles.centerQR}>
@@ -10,8 +11,6 @@ function QrCode() {
     </View>
   )
 }
-
-export default QrCode
 
 const styles = StyleSheet.create({
   bodyStyles: {
@@ -29,4 +28,5 @@ const styles = StyleSheet.create({
     height: '100%',
     alignItems: 'center'
   },
-})
+});
+export default QrCode
