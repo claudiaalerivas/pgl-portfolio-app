@@ -1,12 +1,12 @@
 import React from 'react'
-import {StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 const PersonalInformation = () => {
   return (
     <View style={styles.containerInfo}>
-      <Image style = {{ width: 1000, height:90, zIndex:-1}} source={require('../../assets/images/backgroundLigth.jpg')} />
+      <Image style = {styles.background} source={require('../../../assets/images/backgroundLigth.jpg')} />
       <View >
-        <Image style={styles.avatar} source={require('../../assets/images/avatar.jpg')} />
+        <Image style={styles.avatar} source={require('../../../assets/images/avatar.jpg')} />
         <View style={styles.containerText}>
           <View style={styles.text}>
             <Text style={styles.titleText}>
@@ -23,6 +23,11 @@ const PersonalInformation = () => {
   )
 }
 const styles = StyleSheet.create({
+  background: {
+    width: 1000, 
+    height:90, 
+    zIndex:-1
+  },
   containerInfo: {
     alignItems: 'center',
   },

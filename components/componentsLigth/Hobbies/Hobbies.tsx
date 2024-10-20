@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, FlatList } from 'react-native';
-import { info } from '../../data/info';
+import { info } from '../../../data/info';
 import Entypo from '@expo/vector-icons/Entypo';
 
 

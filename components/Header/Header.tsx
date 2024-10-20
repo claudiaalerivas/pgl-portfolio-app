@@ -1,3 +1,4 @@
+
 import { Pressable, StyleSheet, Text, View, Image } from 'react-native';
 import Entypo from '@expo/vector-icons/Entypo';
 export type App = {
@@ -25,18 +26,16 @@ const Header = ({ setDisplayMyQR, setDarkMode, darkMode }: App ) => {
 }
 
 const styles = StyleSheet.create({
-  logo: {
+  logo :{
     width: 60, 
     height: 60, 
     margin: 0, 
     zIndex:-1
   },
-  
   text:{
     color: 'lightgray', 
     fontWeight: 'bold', 
     textTransform: 'uppercase',
-    
   },
   header: {
     backgroundColor: '#6a6969',
