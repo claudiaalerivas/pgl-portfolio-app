@@ -1,66 +1,70 @@
-
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View, Image } from 'react-native';
+import Entypo from '@expo/vector-icons/Entypo';
 export type App = {
-  setDisplayMyQR: Function;
+  setDisplayMyQR: Function,
+  setDarkMode: Function,
+  darkMode: boolean
 }
-const Header = ({ setDisplayMyQR }: App) => {
+const Header = ({ setDisplayMyQR, setDarkMode, darkMode }: App ) => {
   return (
     <View style={styles.header}>
-      <Text style={styles.title}>My Portfolio App</Text>
+      <Image style={styles.logo} source={require('../../assets/images/logo2.png')} />
       <View style={styles.navegationMenu}>
-        <Pressable accessibilityLabel='Información personal' style={styles.buttomRoute} onPress={() => setDisplayMyQR(true)}>
-          <Text style={styles.textButtomMyInfo}>Mi info</Text>
+        <Pressable accessibilityLabel='Información personal' style={styles.buttomRouteTitle} onPress={() => setDisplayMyQR(true)}>
+          <Text style={styles.text}>Mi info</Text>
         </Pressable>
         <Pressable accessibilityLabel='Botón redireccionamiento QR' style={styles.buttomRoute} onPress={() => setDisplayMyQR(false)}>
-          <Text style={styles.textButtomQr}>Mi Repo</Text>
+          <Text style={styles.text}>Mi Repo</Text>
+        </Pressable>
+        <Pressable accessibilityLabel='Botón redireccionamiento QR' style={styles.icon} onPress={() => setDarkMode(!darkMode)}>
+          <Entypo name = "adjust" size={24} color="white" />
         </Pressable>
       </View>
     </View>
   )
-};
+}
 
 const styles = StyleSheet.create({
-  textButtomQr: {
-    color: 'lightgray',
-    fontWeight: 'bold',
+  logo: {
+    width: 60, 
+    height: 60, 
+    margin: 0, 
+    zIndex:-1
+  },
+  
+  text:{
+    color: 'lightgray', 
+    fontWeight: 'bold', 
     textTransform: 'uppercase',
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 7,
-    },
-    shadowOpacity: 0.43,
-    shadowRadius: 9.51,
-    elevation: 15,
-  },
-  textButtomMyInfo: {
-    color: 'lightgray',
-    fontWeight: 'bold',
-    textTransform: 'uppercase'
-  },
-  title: {
-    backgroundColor: 'gray',
-    textAlign: 'center',
-    fontWeight: 'bold',
-    textAlignVertical: 'center',
-    fontSize: 30,
+    
   },
   header: {
+    backgroundColor: '#6a6969',
     height: '15%',
-    paddingTop: 50,
+    paddingTop: 60,
+    paddingBottom: 10,
     width: '100%',
   },
   navegationMenu: {
+    paddingLeft:'20%',
+    marginTop:'-10%',
     flexDirection: 'row',
-    backgroundColor: 'darkgray',
     justifyContent: 'center',
-    alignItems: 'center'
   },
   buttomRoute: {
     width: '50%',
-    padding: 11,
-    paddingLeft: 50
+    paddingBottom: 5,
+    paddingLeft: 10,
   },
-
-});
+  icon: {
+    width: '50%',
+    paddingLeft: 20,
+    marginTop:'-2%'
+  },
+  buttomRouteTitle: {
+    width: '50%',
+    paddingBottom: 5,
+    paddingLeft: 80,
+  },
+})
 export default Header
