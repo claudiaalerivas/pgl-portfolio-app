@@ -5,7 +5,7 @@ import QRCode from 'react-native-qrcode-svg';
 const QrCode = () => {
   return (
     <View style={styles.bodyStyles}>
-      <View style={styles.CentrarcodigoQR}>
+      <View style={styles.centerQr}>
         <QRCode value="https://github.com/claudiaalerivas" />
       </View>
     </View>
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     height: '85%'
   },
-  CentrarcodigoQR: {
+  centerQr: {
     justifyContent: 'center',
     width: '100%',
     height: '100%',
