@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Header from './components/Header/Header';
-import { PersonalInformation } from './components/PersonalInformation/PersonalInformation';
-import {HobbiesContainer} from './components/HobbiesContainer/HobbiesContainer';
+import PersonalInformation from './components/PersonalInformation/PersonalInformation';
+import HobbiesContainer from './components/HobbiesContainer/HobbiesContainer';
 import { StyleSheet, View } from 'react-native';
 import QrCode from './components/QrCode/QrCode';
 
